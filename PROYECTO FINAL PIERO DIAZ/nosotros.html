@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Pastelería Dulce Sabor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (para íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            background-color: #fff8f3;
+            color: #6b3020;
+        }
+        .header-section {
+            text-align: center;
+            background: linear-gradient(to bottom, #ffd7c9, #fce5e0);
+            padding: 50px 20px;
+            border-bottom: 5px solid #ff7b5a;
+        }
+        .header-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #6b3020;
+        }
+        .header-section p {
+            font-size: 1.2rem;
+        }
+        .team-carousel img {
+            height: 600px;
+            border-radius: 10px;
+        }
+        .history-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fce5e0;
+        }
+        .history-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #6b3020;
+        }
+        .history-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4d1f0c;
+        }
+        .counter-section {
+            background: #ffd7c9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .counter {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .counter-description {
+            font-size: 1.1rem;
+            color: #4d1f0c;
+        }
+        .icon {
+            font-size: 2.5rem;
+            color: #ff7b5a;
+        }
+        .custom-prev {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 40px; 
+        height: 40px; 
+        border: none;
+        }
+
+        .custom-prev .visually-hidden {
+        display: none; 
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <section class="header-section">
+        <h1 class="animate__animated animate__fadeInDown">Nuestra Historia</h1>
+        <p class="animate__animated animate__fadeInUp">Pastelería Valeric: Desde el corazón hacia tu mesa ,tortas con mucho cariño y amor llevando nuestra dulzura a todas las Casas y familias de San juan de Miraflores</p>
+    </section>
+
+    <!-- Sección de Historia -->
+    <section class="history-section">
+        <h2 class="animate__animated animate__fadeIn">¿Quiénes Somos?</h2>
+        <p class="animate__animated animate__fadeInUp">
+            Desde 2012, hemos endulzado los momentos más especiales de nuestros clientes.  
+            Nacimos como un pequeño negocio , con la misión de compartir la pasión por la repostería.  
+            Hoy, gracias a nuestro amor por los detalles, somos conocidos por nuestras tortas únicas y deliciosas, postres deliciosos y atención personalizada , gracias a nustro personal con los atenderà con mucho cariño y paciencia.  
+        </p>
+    </section>
+
+    <!-- Carrusel de Equipo -->
+    <div id="teamCarousel" class="carousel slide team-carousel mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="d34f7d8b-23ca-4865-a77a-e0dd6205cf74.jfif" class="d-block w-100" alt="Nuestro personal">
+                <div class="carousel-caption">
+                    <h5>Nuestro Personal</h5>
+                    <p>Siempre listos para servirte con una sonrisa.</p>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="edcb54ba-c270-404f-a2bd-b990facc1b58.jfif" class="d-block w-100" alt="Nuestro Personal">
+                <div class="carousel-caption">
+                    <h5>Nuestro Personal</h5>
+                    <p>Siempre listos para dar cariño a los clientes.</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        
+        
+
+        <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Contador de Logros -->
+    <section class="counter-section mt-4">
+        <h2>Nuestros Logros</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fas fa-birthday-cake icon"></i>
+                <p class="counter" id="cakesCount">0</p>
+                <p class="counter-description">Pasteles Vendidos</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-calendar-alt icon"></i>
+                <p class="counter" id="yearsCount">0</p>
+                <p class="counter-description">Años de Experiencia</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-smile icon"></i>
+                <p class="counter" id="customersCount">0</p>
+                <p class="counter-description">Clientes Felices</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Acordeón -->
+<section class="accordion-section mt-4">
+    <h2 class="text-center">Preguntas Frecuentes</h2>
+    <div class="accordion w-75 mx-auto mt-3" id="faqAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿Realizan pedidos personalizados?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    ¡Por supuesto! Podemos personalizar pasteles y postres según tus necesidades. Contáctanos con al menos 48 horas de anticipación.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Las tortas y postres son del dia?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Sí, ofrecemos nuestros productos del dia y de regalo porciones de cortesias.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Hacen entregas a domicilio?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Sí, realizamos entregas en San Juan de Miraflores y distritos cercanos. Consulta nuestras tarifas y zonas de cobertura al hacer tu pedido.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer><br>
+<div class="col-md-4 text-center mb-3">
+    <h5>Horarios de Atención</h5>
+    <p><i class="fas fa-clock"></i> Lunes a Viernes: 9:00 AM - 11:30 PM</p>
+    <p><i class="fas fa-clock"></i> Sábados y Domingos: 8:00 AM - 12:00 AM</p>
+</div>
+</div>
+<hr class="bg-light">
+<div class="text-center">
+<p class="mb-0">© 2024 Pasteleria Valeric. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer><br>
+
+        <header>
+        
+        
+        <div class="d-flex justify-content-center gap-2">
+            <a href="pasteleria.html" class="btn btn-outline-danger">Pastelería</a>
+            <a href="catalogo.html" class="btn btn-outline-danger">Catalogo</a>
+            <a href="contacto.html" class="btn btn-outline-danger">Contacto</a>
+        </div>
+    </header><br>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Contador animado
+            function animateCounter(id, start, end, duration) {
+                let obj = document.getElementById(id);
+                let current = start;
+                let increment = (end - start) / duration;
+
+                let timer = setInterval(function() {
+                    current += increment;
+                    obj.textContent = Math.floor(current);
+                    if (current >= end) {
+                        clearInterval(timer);
+                        obj.textContent = end; // Ajustar al valor final
+                    }
+                }, 50);
+            }
+
+            animateCounter("cakesCount", 0, 209124, 50);
+            animateCounter("yearsCount", 0, 12, 50);
+            animateCounter("customersCount", 0, 132151, 50);
+        });
+    </script>
+</body>
+</html>

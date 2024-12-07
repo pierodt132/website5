@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Pastelería Valeric</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Lilita One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #fff7f3;
+        }
+        .product-card {
+            transition: transform 0.3s ease-in-out;
+            border: none;
+            background: #fce5e0;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .filter-btn {
+            margin: 5px;
+            background-color: #ff7b5a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .filter-btn.active {
+            background-color: #d05f3d;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="text-center my-4">
+        <h1>Catálogo de Productos</h1>
+        <p>Descubre nuestras deliciosas opciones</p>
+    </header>
+    <div class="text-center mb-4">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="Tortas">Tortas</button>
+        <button class="filter-btn" data-category="Postres">Postres</button>
+        <button class="filter-btn" data-category="Bebidas">Bebidas</button>
+    </div>
+
+    
+    <div class="container">
+        <div class="row" id="productGrid">
+            <!-- Producto 1 -->
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="tortachoco.jfif" class="card-img-top" alt="Torta de Chocolate">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta de Chocolate</h5>
+                        <p class="card-text">S/52</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="nkuy2ippvoyyyphkvslx.webp" class="card-img-top" alt="Torta de Maracuyà">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta de Maracuyà</h5>
+                        <p class="card-text">S/50</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="ykdonjgyhtsbaw3kddby.png" class="card-img-top" alt="Torta de Cafe">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta de Cafè</h5>
+                        <p class="card-text">S/46</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="Torta-Festival-Fresa-10-Porciones-1-341013649.webp" class="card-img-top" alt="delicia de fresa">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta de Fresa</h5>
+                        <p class="card-text">S/45</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="pastel-fresas.webp" class="card-img-top" alt="3 LECHES FRESADA">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">3 Leches de Fresa</h5>
+                        <p class="card-text">S/55</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="Torta-Hindu.png" class="card-img-top" alt="Torta de lucuma">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta de Lucuma</h5>
+                        <p class="card-text">S/48</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="torta-sorpresa.jpg" class="card-img-top" alt="Torta candy">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta Candy</h5>
+                        <p class="card-text">S/60</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="Torta-Selva-Negra-Choco-Cuisine-Co-6-Porciones-1-162758172.webp" class="card-img-top" alt="selva negra">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Selva Negra</h5>
+                        <p class="card-text">S/46</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="Torta-Delicia-de-Vainilla-20-Porciones-1-87877.webp" class="card-img-top" alt="3 leches de vainilla">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">3 Leches Vainilla</h5>
+                        <p class="card-text">S/52</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="495349-800-auto.webp" class="card-img-top" alt="torta de guanabana">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta de Guanabana</h5>
+                        <p class="card-text">S/50</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="658546-800-auto.webp" class="card-img-top" alt="torta helada">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta Helada</h5>
+                        <p class="card-text">S/43</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 product-item Tortas">
+                <div class="card product-card">
+                    <img src="HTB12ujmXoGF3KVjSZFmq6zqPXXa0.avif" class="card-img-top" alt="torta de frutas">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Torta Frutada</h5>
+                        <p class="card-text">S/50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" id="productGrid">
+    <div class="col-md-4 mb-4 product-item Postres">
+        <div class="card product-card">
+            <img src="tartaleta-de-fresa.png" class="card-img-top" alt="Tartaleta de fresa">
+            <div class="card-body text-center">
+                <h5 class="card-title">Tartaleta de Fresa</h5>
+                <p class="card-text">S/3.50</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Postres">
+        <div class="card product-card">
+            <img src="INF4CHEESECAKEFRESA_2048x.webp" class="card-img-top" alt="cheescake de fresa">
+            <div class="card-body text-center">
+                <h5 class="card-title">Cheescake Fresa</h5>
+                <p class="card-text">S/5.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Postres">
+        <div class="card product-card">
+            <img src="crema-volteada.png" class="card-img-top" alt="crema">
+            <div class="card-body text-center">
+                <h5 class="card-title">Crema volteada</h5>
+                <p class="card-text">S/5.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Postres">
+        <div class="card product-card">
+            <img src="pie-de-limon.png" class="card-img-top" alt="pye de limon">
+            <div class="card-body text-center">
+                <h5 class="card-title">Pye de Limon</h5>
+                <p class="card-text">S/5.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Postres">
+        <div class="card product-card">
+            <img src="21322-1540507491.jfif" class="card-img-top" alt="pye de manzana">
+            <div class="card-body text-center">
+                <h5 class="card-title">Pye de Manzana</h5>
+                <p class="card-text">S/5.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Postres">
+        <div class="card product-card">
+            <img src="budin.png" class="card-img-top" alt="budin">
+            <div class="card-body text-center">
+                <h5 class="card-title">Budin</h5>
+                <p class="card-text">S/3.50</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Postres">
+        <div class="card product-card">
+            <img src="0020845700000-1.jpg" class="card-img-top" alt="keke">
+            <div class="card-body text-center">
+                <h5 class="card-title">Keke</h5>
+                <p class="card-text">S/2.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Postres">
+        <div class="card product-card">
+            <img src="leche-asada.jpg" class="card-img-top" alt="leche asada">
+            <div class="card-body text-center">
+                <h5 class="card-title">Leche Asada</h5>
+                <p class="card-text">S/3.50</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Postres">
+        <div class="card product-card">
+            <img src="TrufasAlmendra-600x600.png" class="card-img-top" alt="trufas">
+            <div class="card-body text-center">
+                <h5 class="card-title">Trufas</h5>
+                <p class="card-text">S/5.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="productGrid">
+    
+
+    <div class="col-md-4 mb-4 product-item Bebidas">
+        <div class="card product-card">
+            <img src="o9fraudoGMYKjN82q-800-x.webp" class="card-img-top" alt="coca cola">
+            <div class="card-body text-center">
+                <h5 class="card-title">Coca Cola</h5>
+                <p class="card-text">S/3.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Bebidas">
+        <div class="card product-card">
+             <img src="sintitulo1511.png" class="card-img-top" alt="inka cola">
+            <div class="card-body text-center">
+                <h5 class="card-title">Inka Cola</h5>
+                <p class="card-text">S/3.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Bebidas">
+        <div class="card product-card">
+             <img src="122874_500x500_ON_57.png" class="card-img-top" alt="agua">
+            <div class="card-body text-center">
+                <h5 class="card-title">Agua Cielo</h5>
+                <p class="card-text">S/2.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Bebidas">
+        <div class="card product-card">
+            <img src="56v27hit6w_shutterstock_1497040079.jpg" class="card-img-top" alt="cafe">
+            <div class="card-body text-center">
+                <h5 class="card-title">Cafè</h5>
+                <p class="card-text">S/3.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 product-item Bebidas">
+        <div class="card product-card">
+            <img src="Por-que-el-zumo-de-fruta-no-equivale-a-tomar-la-fruta-entera-en-terminos-de-salud.jpg" class="card-img-top" alt="jugos">
+            <div class="card-body text-center">
+                <h5 class="card-title">Jugos</h5>
+                <p class="card-text">S/9.00</p>
+            </div>
+        </div>
+    </div>
+
+    <header class="text-center my-4">
+        <p>Descubre nuestras deliciosas opciones</p>
+        
+        <div class="d-flex justify-content-center gap-2">
+            <a href="pasteleria.html" class="btn btn-outline-danger">Pastelería</a>
+            <a href="nosotros.html" class="btn btn-outline-danger">Nosotros</a>
+            <a href="contacto.html" class="btn btn-outline-danger">Contacto</a>
+        </div>
+    </header>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Filtrado de productos
+            $(".filter-btn").click(function() {
+                const category = $(this).data("category");
+
+                // Cambiar el botón activo
+                $(".filter-btn").removeClass("active");
+                $(this).addClass("active");
+
+                // Mostrar u ocultar productos
+                if (category === "all") {
+                    $(".product-item").show();
+                } else {
+                    $(".product-item").hide();
+                    $(`.${category}`).show();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
